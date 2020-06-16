@@ -10,11 +10,6 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20200616150234) do
-
-  create_table "coupons", force: :cascade do |t|
-    t.string "coupon_code"
-    t.string "store"
-  end
+ActiveRecord::Schema.define(version: 0) do
 
 end

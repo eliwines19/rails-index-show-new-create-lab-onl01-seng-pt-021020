@@ -9,7 +9,7 @@ class CouponsController < ApplicationController
   end
 
   def new
-  @coupon = Coupon.last
+    @coupon = Coupon.new
   end
 
   def create

@@ -8,15 +8,15 @@ class CouponsController < ApplicationController
     @coupon = Student.find(params[:id])
   end
 
-  def new 
-    
+  def new
+
   end
 
-  def create 
+  def create
     @coupon = Coupon.new
     @coupon.coupon_code = params[:coupon_code]
     @coupon.store = params[:store]
-    @coupon.save 
+    @coupon.save
     redirect_to coupon_path(@coupon)
   end
   
